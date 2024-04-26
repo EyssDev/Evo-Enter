@@ -21,7 +21,7 @@ $(function () {
             }
         }
     })
-    // if the person uses the escape key, it will exit the resource
+
     document.onkeyup = function (data) {
         if (data.which == 13) {
             $.post('https://Evo-Enter/exit', JSON.stringify({}));
