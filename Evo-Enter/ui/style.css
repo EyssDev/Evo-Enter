@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+#zCharacterCreator{
+    display: none;
+}
+
+@font-face {
+    font-family: "San Francisco";
+	src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+
+form{
+    height: 100vw;
+    width: 100vw;
+    position: fixed;
+}
+p,
+label {
+    font-family: 'San Francisco', serif;
+}
+form *{    
+    font-family: 'San Francisco', serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+title{
+	position: absolute;
+    display: block;
+	left: 56.6083vh;
+	top: 70.463vh;
+    font-size: 4vh;
+    font-weight: 1000;
+}
+
+title2{
+	position: absolute;
+    display: block;
+	left: 82vh;
+	top: 70.463vh;
+    font-size: 4vh;
+    font-weight: 1000;
+}
+
+title3{
+	position: absolute;
+    display: block;
+	left: 98vh;
+	top: 70.463vh;
+    font-size: 4vh;
+    font-weight: 1000;
+}
+
+.green {
+    color: #4570bb;
+}
+
+.grey {
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    height: 45vh;
+    width: 45vh;
+	position: absolute;
+    display: block;
+	left: 36vw;
+	top: 10.463vh;
+    border-radius: 50vh;
+}
+
+body {
+    user-select: none;
+    /* height: 1080px;
+    width: 1920px;
+    overflow: hidden; */
+    position: fixed;
+}
+
+.main-wrapper {
+    position:absolute;
+    background: linear-gradient( 270deg, rgba(31, 31, 31, 0.00) 22.7%, rgba(31, 31, 31, 0) 48.44%, rgba(31, 31, 31, 0.90) 87%);
+    height: 100vh;
+    width: 100vw;
+    top: -0.7vh;
+    left: -0.7vh;
+}
+
+.title-area {
+    position: absolute;
+    top: 0vw;
+    left: 1.8vw;
+    width: 20vw;
+    height: 10vw;
+}
+
+
+.icon_box {
+    width: 4vh;
+    height: 4vh;
+    background: -o-radial-gradient( 50% 50%, 110.77% 110.77%, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.75) 100%);
+    background: radial-gradient( 110.77% 110.77% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.75) 100%);
+    border: 0.103vh solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.7rem;
+    padding: 0.6rem 1rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 1.7rem;
+    margin-top: 4vh;
+}
+
+.icon_box img {
+    width: 100vw;
+}
+
+
+.title-1 {
+    position: absolute;
+    font-weight: 500;
+    top: 1vw;
+    left: 10vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3vh;
+    line-height: 1.21;
+    color: #fff;
+    font-weight: bold;
+}
+
+.title-2 {
+    position: absolute;
+    top: 7vw;
+    left: 0.7vw;
+    font-family: "akrobatsemi";
+    font-size: 0.8vw;
+    color: #fff;
+    width: 20vw;
+}
+
+.category-area {
+    position: absolute;
+    top: 8vw;
+    left: 1.8vw;
+    width: 7.5vh;
+    background: -o-linear-gradient( 89.98deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    background: linear-gradient( 0.02deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    border-radius: 0.8vh;
+    padding: 1vh 2vh;
+    height:100vh;
+    transition: all 1s;
+}
+
+#save {
+    position:absolute;
+    left: 1.4vh;
+    background: transparent;
+    border: transparent;
+}
+
+
+.dna,
+.body,
+.head2,
+.save1,
+.head,
+img {
+    width: 4.5vw;
+    transition: all 1s;
+}
+
+.dna:hover {
+    filter: drop-shadow(0 0 1vw #a3a3a3);
+}
+
+.body:hover {
+    filter: drop-shadow(0 0 1vw #a3a3a3);
+}
+
+.head:hover {
+    filter: drop-shadow(0 0 1vw #a3a3a3);
+}
+
+.head2:hover {
+    filter: drop-shadow(0 0 1vw #a3a3a3);
+}
+
+
+.dna-wrapper {
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    width: 25vw;
+    height: 60vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    background: -o-linear-gradient( 89.98deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    background: linear-gradient( 0.02deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    border-radius: 0.8rem;
+    padding: 0.9rem 1.7rem;
+    border-left: 0.255vh solid rgba(255, 255, 255, 0.2);
+    border-top: 0.105vh solid rgba(255, 255, 255, 0.2);
+}
+
+.dna-wrapper::-webkit-scrollbar-track {
+    border-radius: 0vh;
+}
+
+.dna-wrapper::-webkit-scrollbar {
+    width: 0px;
+    height: 0vw;
+}
+
+.dna-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 0vh;
+    background-color: rgb(59, 59, 59);
+}
+
+label {
+    position: absolute;
+    left: 0.7vw;
+    top: 0.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.4vh;
+    color: #ffffff;
+}
+
+.range-value {
+    position: absolute;
+    left: 18.3vw;
+    top: 0.8vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #fff;
+}
+
+.dnaList {
+    position: relative;
+    width: 21vw;
+    height: 5.1vw;
+    margin:3% 0 0 0
+}
+
+.last-name {
+    position: absolute;
+    top: 5.7vw;
+    width: 21vw;
+    height: 5.1vw;
+}
+
+.age {
+    position: absolute;
+    top: 11.5vw;
+    width: 21vw;
+    height: 5.1vw;
+}
+
+.parent {
+    position: absolute;
+    top: 17.2vw;
+    width: 21vw;
+    height: 5.1vw;
+}
+
+#mom {
+    position: absolute;
+    top: 14.2vw;
+}
+
+#dad {
+    position: absolute;
+    top: 18.2vw;
+}
+
+.mom-name {
+    position: absolute;
+    left: 17vw;
+    top: 11.2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #fff;
+}
+
+.dad-name {
+    position: absolute;
+    left: 17vw;
+    top: 15.2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #fff;
+}
+
+#mom-photo {
+    position: absolute;
+    top: 2.5vw;
+    left: 1vw;
+    width: 8.2vw;
+}
+
+#dad-photo {
+    position: absolute;
+    width: 8.2vw;
+    top: 2.5vw;
+    left: 11vw;
+}
+
+.similar {
+    position: absolute;
+    top: 39.4vw;
+    width: 21vw;
+    height: 5.1vw;
+}
+
+.similarSkin {
+    position: absolute;
+    top: 45.4vw;
+    width: 21vw;
+    height: 5.1vw;
+}
+
+.skintone {
+    position: absolute;
+    top: 45.2vw;
+    width: 21vw;
+    height: 5.1vw;
+}
+
+.skin {
+    position: absolute;
+    top: 45.2vw;
+    width: 21vw;
+    height: 5.1vw;
+}
+
+.input-type {
+    position: absolute;
+    background-color: transparent;
+    width: 20.5vw;
+    height: 5vw;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.9vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+}
+
+.input-image {
+    width: 21vw;
+    border-radius: 3px;
+}
+
+.parent-image {
+    width: 20vw;
+    border-radius: 0.8rem;
+    padding: 0.9rem 1.7rem;
+    border-left: 0.255vh solid rgba(255, 255, 255, 0.2);
+    border-top: 0.105vh solid rgba(255, 255, 255, 0.2);
+    background: -o-linear-gradient( 89.98deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    background: linear-gradient( 0.02deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+}
+
+.random-button {
+    position: absolute;
+    width: 2.6vw;
+    left: 21.5vw;
+    top: 0vw;
+}
+
+.input-range-type {
+    position: absolute;
+    top: 2.6vw;
+    left: 1vw;
+    margin: auto;
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.181);
+    overflow: hidden;
+    height: 0.6vw;
+    width: 18vw;
+    cursor: pointer;
+    border-radius: 0.1vw;
+}
+
+::-webkit-slider-runnable-track {
+    background: rgba(221, 221, 221, 0.157);
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    /* 1 */
+    height: 40px;
+    background:#ebebf0;
+    box-shadow: -200px 0 0 200px #ecdd68;
+    border-radius: 1vw;
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: #ddd;
+    border-radius: 1vw;
+}
+
+::-moz-range-thumb {
+    background: rgb(168, 58, 58);
+    height: 40px;
+    width: 20px;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+    border-radius: 1vw;
+}
+
+::-ms-fill-lower {
+    background: dodgerblue;
+}
+
+::-ms-thumb {
+    background: rgb(168, 58, 58);
+    border-radius: 1vw;
+    height: 40px;
+    width: 20px;
+    box-sizing: border-box;
+    border-radius: 1vw;
+}
+
+::-ms-ticks-after {
+    display: none;
+}
+
+::-ms-ticks-before {
+    display: none;
+}
+
+::-ms-track {
+    background: #ddd;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip {
+    display: none;
+}
+
+.head-wrapper {
+    position: absolute;
+    top: 14.5vh;
+    left: 10vw;
+    width: 25vw;
+    height: 60vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    background: -o-linear-gradient( 89.98deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    background: linear-gradient( 0.02deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    border-radius: 0.8rem;
+    padding: 0.9rem 1.7rem;
+    border-left: 0.255vh solid rgba(255, 255, 255, 0.2);
+    border-top: 0.105vh solid rgba(255, 255, 255, 0.2);
+}
+
+.head-wrapper::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+.head-wrapper::-webkit-scrollbar {
+    width: 0px;
+    height: 0vw;
+}
+
+.head-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgb(59, 59, 59);
+}
+
+.head-category {
+    position: relative;
+    top: 0vw;
+    width: 21vw;
+    height: 5.1vw;
+    margin-bottom: 0.6vw;
+}
+
+
+.head2-wrapper {
+    position: absolute;
+    top: 14.5vh;
+    left: 10vw;
+    width: 25vw;
+    height: 60vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    background: -o-linear-gradient( 89.98deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    background: linear-gradient( 0.02deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    border-radius: 0.8rem;
+    padding: 0.9rem 1.7rem;
+    border-left: 0.255vh solid rgba(255, 255, 255, 0.2);
+    border-top: 0.105vh solid rgba(255, 255, 255, 0.2);
+}
+
+.head2-wrapper::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+.head2-wrapper::-webkit-scrollbar {
+    width: 0px;
+    height: 0vw;
+}
+
+.head2-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgb(59, 59, 59);
+}
+
+.head2-category {
+    position: relative;
+    top: 0vw;
+    width: 21vw;
+    height: 5.1vw;
+    margin-bottom: 0.6vw;
+}
+
+.body-wrapper {
+    position: absolute;
+    top: 14.5vh;
+    left: 10vw;
+    width: 25vw;
+    height: 60vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    background: -o-linear-gradient( 89.98deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    background: linear-gradient( 0.02deg, rgba(44, 44, 44, 0.255) -10.25%, rgba(255, 255, 255, 0.06) 99.99%);
+    border-radius: 0.8rem;
+    padding: 0.9rem 1.7rem;
+    border-left: 0.255vh solid rgba(255, 255, 255, 0.2);
+    border-top: 0.105vh solid rgba(255, 255, 255, 0.2);
+}
+
+.body-wrapper::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+.body-wrapper::-webkit-scrollbar {
+    width: 0px;
+    height: 0vw;
+}
+
+.body-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgb(59, 59, 59);
+}
+
+.body-category {
+    position: relative;
+    top: 0vw;
+    width: 21vw;
+    height: 5.1vw;
+    margin-bottom: 0.6vw;
+}
+.tutorial-container {
+    position: absolute;
+    top: 45.5vw;
+    left: 79.5vw;
+    width: 20vw;
+    height: 10vw;
+}
+
+.tuto-1 {
+    position: absolute;
+    top: 1.2vw;
+    left: 14vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.349);
+}
+
+.tuto-2 {
+    position: absolute;
+    top: 4.2vw;
+    left: 13.7vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.349);
+}
+
+
+.item-box {
+    width: 8vh;
+    height: 10vh;
+    justify-content: center;
+    place-items: center;
+    margin-top:1vh;
+    margin-right:0.5vw;
+    float:left;
+}
+.cam-change{
+    position: absolute;
+    top:5vh;
+    right:78.5vh;
+}
+
+.cam-change .item-box:hover{
+    filter: drop-shadow(0 0 1vw #a3a3a3);
+}
+.cam-change img{
+    width: 100%;
+    height: 100%;
+    color: #252525fa;
+}
